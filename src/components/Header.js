@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Image, StyleSheet, Dimensions } from 'react-native';
-import { MapView } from 'expo';
-import * as firebase from 'firebase';
+import MapView from 'react-native-maps';
+import firebase from 'firebase';
 
 
 const W_Width = Dimensions.get('window').width;
@@ -9,12 +9,6 @@ const W_Higth = Dimensions.get('window').height;
 
 export default class Header extends Component {
     state = {
-        // region: {
-        //     latitude: 13.8463,
-        //     longitude: 100.5621,
-        //     latitudeDelta: 0.0922,
-        //     longitudeDelta: 0.0421
-        // },
         item: '',
         items: [],
         address: {}
